@@ -1,0 +1,21 @@
+# Go build outputs
+*.exe
+*.out
+*.test
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+practice on go
+.idea/
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/settings.json
+.idea/.gitignore
+.idea/GO.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
