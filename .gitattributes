@@ -4,3 +4,7 @@
 *.md linguist-documentation
 docs/* linguist-documentation
 notes/* linguist-documentation
+
+# .gitattributes
+*.go linguist-detectable=true
+*.md linguist-documentation=true
