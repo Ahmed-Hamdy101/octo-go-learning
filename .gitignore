@@ -19,3 +19,17 @@ practice on go
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
+
+
+# .gitignore
+
+# Binaries & Executables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+
+# Package & cache folders
+pkg/
