@@ -33,3 +33,5 @@ bin/
 
 # Package & cache folders
 pkg/
+octo-go-learning.code-workspace
+./octo-go-learning.code-workspace
