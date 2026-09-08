@@ -11,8 +11,8 @@ This chapter focuses on string output and formatting in Go.
 
 ## Example files
 
-- `printFormat.go` : demonstrates placeholders and data types
-- `strLength.go` : shows how to print string length and handle errors
+- `formatting.go` : demonstrates placeholders and data types
+- `string_length.go` : shows how to print string length and handle errors
 
 ## What to learn
 
