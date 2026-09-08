@@ -44,7 +44,7 @@ The purpose of this repository is to help you:
 From the repository root, you can run a file like this:
 
 ```bash
-go run ch1/hello-world.go
+go run ch1/hello.go
 ```
 
 ## Common Go commands
