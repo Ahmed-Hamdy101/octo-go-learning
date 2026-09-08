@@ -11,7 +11,7 @@ This chapter introduces the basic structure of a Go program.
 
 ## Example file
 
-- `hello-world.go` : prints a greeting and converts text to uppercase.
+- `hello.go` : prints a greeting and converts text to uppercase.
 
 ## What to learn
 
