@@ -10,7 +10,7 @@ This chapter explores basic arithmetic operations and numeric handling in Go.
 
 ## Example file
 
-- `arithmatic.go` : demonstrates arithmetic and big-number calculations
+- `arithmetic.go` : demonstrates arithmetic and big-number calculations
 
 ## What to learn
 
