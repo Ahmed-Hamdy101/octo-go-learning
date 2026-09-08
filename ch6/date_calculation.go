@@ -22,4 +22,3 @@ func main() {
 	// fmt.Printf("Tommorrow is %v,%v,%v,%v", tommorrow.Weekday(), tommorrow.Month(), tommorrow.Day(), tommorrow.Year())
 
 }
-w

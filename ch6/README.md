@@ -11,7 +11,7 @@ This chapter introduces time handling in Go.
 
 ## Example file
 
-- `date_time.go` : shows how to create a date and calculate tomorrow
+- `date_calculation.go` : shows how to create a date and calculate tomorrow
 
 ## What to learn
 
