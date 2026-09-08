@@ -11,9 +11,9 @@ This chapter covers how to read input from the user and convert values.
 
 ## Example files
 
-- `bufio_os.go` : reads a string from the console
-- `gettingInput.go` : uses `fmt.Scanln` to collect input
-- `useParseConvReader.go` : parses a numeric string into a float
+- `read_with_bufio.go` : reads a string from the console
+- `read_with_scanln.go` : uses `fmt.Scanln` to collect input
+- `parse_float.go` : parses a numeric string into a float
 
 ## What to learn
 
