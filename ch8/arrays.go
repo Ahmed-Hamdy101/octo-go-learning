@@ -10,8 +10,11 @@ func main() {
 	animals[3] = "cow"
 	animals[4] = "elphant"
 	fmt.Println(animals)
-	
+
 	// intial arrays with value
-	var goos = [2]int{9999,2112}
+	var goos = [2]int{9999, 2112}
 	fmt.Println(goos)
+	fmt.Println(len(animals))
+
+	fmt.Println(len(goos))
 }
