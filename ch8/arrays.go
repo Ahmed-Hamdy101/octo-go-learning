@@ -8,7 +8,7 @@ func main() {
 	animals[1] = "tiger"
 	animals[2] = "wolf"
 	animals[3] = "cow"
-	animals[4] = "elphant"
+	animals[4] = "elephant"
 	fmt.Println(animals)
 
 	// intial arrays with value
