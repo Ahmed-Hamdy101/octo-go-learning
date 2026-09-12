@@ -1,0 +1,40 @@
+name: Go checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Check formatting
+        shell: bash
+        run: |
+          files=$(find . -type f -name '*.go' \
+            -not -path '*/bin/*' \
+            -not -path '*/pkg/*' -print)
+          test -n "$files"
+          test -z "$(find . -type f -name '*.go' \
+            -not -path '*/bin/*' \
+            -not -path '*/pkg/*' -print0 | xargs -0 gofmt -l)"
+
+      - name: Compile examples
+        shell: bash
+        run: |
+          while IFS= read -r file; do
+            go test "$file"
+          done < <(find . -type f -name '*.go' \
+            -not -path '*/bin/*' \
+            -not -path '*/pkg/*')
