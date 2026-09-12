@@ -1,64 +1,78 @@
-# Go Learning Repository
+# octo-go-learning
 
-This repository is a structured Go study workspace for learning the language step by step through small programs, exercises, and reference notes.
+Small, runnable Go lessons that grow from `hello world` to slices, pointers,
+dates, parsing, and classic workspace layouts.
 
-## What this repository contains
+This is a hands-on notebook rather than a framework: each chapter keeps the
+code intentionally small so you can read it, run it, change it, and observe
+the result.
 
-- Chapter-based examples from ch1 to ch7
-- Practice exercises in the practice on go folder
-- Study notes and documentation in the docs and notes folders
-- Simple examples that can be run directly with Go commands
+## Start here
 
-## Learning goals
+### Requirements
 
-The purpose of this repository is to help you:
+- Go 1.21 or newer
+- A terminal and editor
 
-- understand the basics of Go syntax
-- practice common programming concepts
-- build confidence by writing small working programs
-- review notes and examples in a consistent structure
+### Run a lesson
 
-## Repository structure
-
-- ch1/ : introduction and first Go program
-- ch2/ : Go workspace, modules, and install concepts
-- ch3/ : formatting strings and string length
-- ch4/ : input, output, and parsing values
-- ch5/ : arithmetic and basic calculations
-- ch6/ : date and time handling
-- ch7/ : pointers and memory references
-- docs/ : study guides and learning notes
-- notes/ : quick references and cheat sheets
-- practice on go/ : extra exercises and mini challenges
-
-## Recommended learning path
-
-1. Start with Chapter 1 and understand the basic program structure.
-2. Move through each chapter in order.
-3. Run the example files with go run.
-4. Review the notes after each chapter.
-5. Practice the exercises in the practice on go folder.
-
-## How to run examples
-
-From the repository root, you can run a file like this:
+From the repository root:
 
 ```bash
-go run ch1/hello.go
+go run ./ch1/hello.go
+go run ./ch9/arrays_with_slice.go
 ```
 
-## Common Go commands
+Most examples are standalone programs. Examples that read from standard input
+will pause for a value when you run them.
+
+### Check your changes
 
 ```bash
-go run .
-go build
-go install ./...
-go mod init example.com/myapp
+gofmt -w path/to/example.go
+go test path/to/example.go
 ```
 
-## Study tips
+The repository's GitHub Actions workflow checks formatting and compiles each
+hand-written example independently.
 
-- Keep code simple and readable.
-- Re-run examples after changing them.
-- Write your own small variations to improve understanding.
-- Review older chapters whenever a concept feels unclear.
+## Learning path
+
+| Chapter | Focus | Start with |
+| --- | --- | --- |
+| [1](ch1/README.md) | Program structure and strings | `ch1/hello.go` |
+| [2](ch2/README.md) | Modules and historical workspaces | `ch2/gowork/` |
+| [3](ch3/README.md) | Formatting and string length | `ch3/formatting.go` |
+| [4](ch4/README.md) | Input and parsing | `ch4/parse_float.go` |
+| [5](ch5/README.md) | Arithmetic and precision | `ch5/arithmetic.go` |
+| [6](ch6/README.md) | Dates and time | `ch6/date_calculation.go` |
+| [7](ch7/README.md) | Pointers | `ch7/pointer.go` |
+| 8 | Arrays | `ch8/arrays.go` |
+| 9 | Slices and capacity | `ch9/arrays_with_slice.go` |
+
+After the chapters, use [`practice on go/`](practice%20on%20go/) for short
+experiments and challenges. The [`docs/`](docs/) folder contains the study
+guide and reference notes.
+
+## A useful study loop
+
+1. Read one example without running it.
+2. Run it and compare the output with your prediction.
+3. Change one value, statement, or type.
+4. Run `gofmt`, then run the file again.
+5. Write down the rule you discovered in your own words.
+
+## Repository map
+
+```text
+ch1/ ... ch9/       Guided lessons
+practice on go/     Extra exercises and experiments
+docs/               Study guide and reference notes
+notes/              Quick reminders
+.github/workflows/  Automated formatting and compile checks
+```
+
+## Contributing
+
+Small improvements are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the
+expected workflow and style.
