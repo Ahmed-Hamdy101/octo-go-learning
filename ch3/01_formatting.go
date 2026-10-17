@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func Formatting() {
 	// decalare variables
 	// string
 	str := "mirror in x.0"

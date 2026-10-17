@@ -4,7 +4,9 @@ import (
 	"fmt"
 )
 
-func main() {
+// strings.go
+func Strings() {
+
 	// decalare variables
 	str1 := "string one "
 	str2 := "string two"
@@ -20,4 +22,5 @@ func main() {
 		// print length
 		fmt.Println(stringLength)
 	}
+
 }
