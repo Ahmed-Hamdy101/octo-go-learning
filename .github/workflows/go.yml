@@ -33,7 +33,7 @@ jobs:
       - name: Compile examples
         shell: bash
         run: |
-          while IFS= read -r file; do
+          go test ./...
             go test "$file"
           done < <(find . -type f -name '*.go' \
             -not -path '*/bin/*' \
