@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func yourAge() {
 	// intial
 	var s string
 	// display message to user
@@ -16,7 +16,7 @@ func main() {
 	// display output -------------------
 	fmt.Println("---------------------")
 	fmt.Println("--------=OUTPUT=--------")
-	fmt.Printf("OUTPUT:%v\n", s)
+	fmt.Printf("Your age is: %v\n", s)
 	fmt.Println("--------=====-------")
 	// end of program---------------------
 
