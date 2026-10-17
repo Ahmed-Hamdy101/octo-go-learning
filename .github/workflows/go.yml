@@ -33,8 +33,8 @@ jobs:
       - name: Compile examples
         shell: bash
         run: |
-          while IFS= read -r file; do
-            go test "$file"
-          done < <(find . -type f -name '*.go' \
+          go test ./...
+          find . -name go.mod \
             -not -path '*/bin/*' \
-            -not -path '*/pkg/*')
+            -not -path '*/pkg/*' \
+            -execdir go test ./... \;
