@@ -8,8 +8,8 @@ import (
 	"strings"
 )
 
-//  convert string to float64
-func main() {
+// convert string to float64
+func ParseString() {
 
 	// import "bufio" and "os" to read input from console
 	reader := bufio.NewReader(os.Stdin)
