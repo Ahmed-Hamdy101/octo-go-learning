@@ -1,5 +1,7 @@
 # octo-go-learning
 
+[![Go checks](https://github.com/Ahmed-Hamdy101/octo-go-learning/actions/workflows/go.yml/badge.svg)](https://github.com/Ahmed-Hamdy101/octo-go-learning/actions/workflows/go.yml)
+
 Small, runnable Go lessons that grow from `hello world` to slices, pointers,
 dates, parsing, and classic workspace layouts.
 
