@@ -3,20 +3,15 @@ package main
 import "fmt"
 
 func main() {
-
-	fmt.Println("---------------- Start Scanner Read String ------------------")
-	// Converte String to Float
+	fmt.Println("---------------- Start ParseFloat Demo ------------------")
 	ParseString()
-	fmt.Println("---------------- End Scanner Converte String to Float --------")
+	fmt.Println("---------------- End ParseFloat Demo ---------------------")
 
-	// read string from In
-	fmt.Println("---------------- Start Scanner Read String ------------------")
+	fmt.Println("---------------- Start ReadString Demo -------------------")
 	ReadString()
-	fmt.Println("---------------- End Scanner Read String ---------------------")
+	fmt.Println("---------------- End ReadString Demo ---------------------")
 
-	fmt.Println("---------------- Start Age Program --------------------------")
-	// get age
+	fmt.Println("---------------- Start Age Program ------------------------")
 	yourAge()
-	fmt.Println("--------------- End Age Program ----------------------------")
-
+	fmt.Println("---------------- End Age Program --------------------------")
 }
