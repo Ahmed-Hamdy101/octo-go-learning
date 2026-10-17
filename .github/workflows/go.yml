@@ -34,7 +34,7 @@ jobs:
         shell: bash
         run: |
           go test ./...
-            go test "$file"
-          done < <(find . -type f -name '*.go' \
+          find . -name go.mod \
             -not -path '*/bin/*' \
-            -not -path '*/pkg/*')
+            -not -path '*/pkg/*' \
+            -execdir go test ./... \;
