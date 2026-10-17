@@ -8,6 +8,7 @@ import (
 	"strings"
 )
 
+//  convert string to float64
 func main() {
 
 	// import "bufio" and "os" to read input from console
