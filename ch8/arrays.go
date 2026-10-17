@@ -16,5 +16,13 @@ func main() {
 	fmt.Println(goos)
 	fmt.Println(len(animals))
 
-	fmt.Println(len(goos))
+	fmt.Println(Swap("friend"))
+}
+
+// example of array  swap I to E with word friend
+func Swap(s string) string {
+	// convert string to array
+	words := []rune(s)
+	words[2], words[3] = words[3], words[2]
+	return string(words)
 }
