@@ -1,4 +1,4 @@
-package ch9
+package arraypkg
 
 func ArraySlice(items []string, start, end int) []string {
 	if start < 0 {
