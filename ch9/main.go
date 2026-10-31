@@ -7,13 +7,13 @@ import (
 )
 
 func main() {
-	// inital new array with values
+	// Create a slice of strings.
 	keyboard := []string{"a", "b", "c", "d", "e", "f"}
 
-	// store function in variables
+	// Call the reusable slice function and store the result.
 	result := arraypkg.ArraySlice(keyboard, 2, len(keyboard)-1)
-	// print full array
+
+	// Print the original list and the sliced result.
 	fmt.Println("Original:", keyboard)
-	// print subset
 	fmt.Println("Subset:", result)
 }
